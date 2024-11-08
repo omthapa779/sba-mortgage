@@ -1,0 +1,360 @@
+:root{
+    --color1: white;
+    --color2: black;
+    --color3: #129fd9;
+    --color4: grey;
+    --color5: rgb(228, 228, 228);
+}
+.main_container{
+  min-height: 100vh;
+  background-color: black;
+  position: absolute;
+  z-index: 900;
+  display: none;
+  color: var(--color1);
+}
+.loading{
+    min-height: 100vh;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    opacity: 100%;
+    color: var(--color3);
+}
+.loading_title{
+    overflow: hidden;
+}
+.loading_title span{
+    position: relative;
+    top: 10vh;
+}
+.loading_holder{
+    width: 20vw;
+    height: 0.7vh;
+    background-color: var(--color1);
+    margin-top: 2vh;
+    overflow: hidden;
+}
+.loading_bar{
+    width: 0%;
+    background-color: var(--color3);
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    padding: 2vh 2.5%;
+}
+.navbar img{
+    object-fit: contain;
+    height: 100%;
+}
+.content{
+    gap: 2vw;
+}
+.nav_content{
+    font-weight: 500;
+    color: white;
+}
+.hero_section{
+    width: 100%;
+    height: 90vh;
+    padding: 2.5vh 2.5%;
+    overflow: hidden;
+    position: relative;
+}
+.hero_contents h4, .small_title, .process_title, .alter_text{
+    color: var(--color3);
+}
+.hero_load{
+    position: relative;
+    top: 50vh;
+}
+.hero_img{
+    background-color: red;
+    overflow: hidden;
+}
+.hero_img video{
+    object-fit: cover;
+    width: 100%;
+    height: 120%;
+}
+.about_us{
+    height: 100vh;
+}
+.about_description{
+    margin-top: 2.5vh;
+}
+.about_image img{
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+.services .big_title{
+    color: var(--color2);
+}
+.service_card_holder{
+    gap: 2.5vw;
+    position: relative;
+}
+.service_card{
+    width: 45%;
+    height: 35vh;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 0.5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    z-index: 700;
+}
+.service_content_holder{
+    position: absolute;
+    z-index: 900;
+    top: 0;
+}
+.view_more_button{
+    top: 150%;
+}
+.process_more{
+    width: 15%;
+    height: 7vh;
+    overflow: hidden;
+}
+.process_card{
+    width: 28%;
+    height: 50vh;
+}
+.customer_holder{
+    width: 100%;
+    height: 70vh;
+}
+.customer_card{
+    overflow: hidden;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.image_holder{
+    width: 100%;
+    height: 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cta{
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.description{
+    padding: 0vh 25%;
+}
+.footer_card{
+    width: fit-content;
+}
+.footer_title_large{
+    color: var(--color3);
+}
+.navbar h2{
+    display: none;
+}
+.about_us_page{
+    height: 90vh;
+    background-color: lightblue;
+    position: relative;
+}
+.about_us_page video{
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.about_page_contents{
+    position: absolute;
+    z-index: 800;
+    padding: 0% 20%;
+}
+.team_left{
+    width: 45%;
+}
+.team_card{
+    background-color: var(--color5);
+    height: 15vh;
+    position: relative;
+}
+.team_card h3, .team_card h5{
+    color: black;
+}
+.image_holder_team{
+    width: 25%;
+    height: 100%;
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+}
+.team_card_holders{
+    position: absolute;
+    z-index: 500;
+}
+.hover_card{
+    background-color: var(--color3);
+    position: absolute;
+    z-index: 200;
+    width: 0%;
+}
+.service_card_page{
+    width: 30.8%;
+    background-color: var(--color5);
+}
+
+@media (max-width: 999px){
+    .hero_contents{
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        padding: 2.5vh; 
+    }
+    .hero_img{
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+    .hero_section{
+        padding: 0;
+    }
+    .about_us{
+        height: 70vh;
+    }
+    .half_button, .upper_team_right, .team_right, .team_left{
+        width: 100%;
+    }
+    .process_more{
+        width: 35%;
+        height: 5vh;
+    }
+    .services, .customer_test {
+        min-height: 91vh;
+    }
+    .process_holder {
+        flex-wrap: wrap;
+    }
+    .process_card{
+        width: 45%;
+        height: 25vh;
+    }
+    .number_sign {
+        justify-content: flex-start;
+        padding: 0vh 15%;
+    }
+    .customer_card{
+        display: none;
+        width: 48%;
+    }
+    .customer_card:nth-of-type(1),
+    .customer_card:nth-of-type(2){
+        display: block;
+    }
+    .footer_title_large{
+        margin-top: 2.5vh;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .lower_right_team{
+        display: none;
+    }
+    .team_right{
+        min-height: 0vh;
+        gap: 0;
+        text-align: center;
+    }
+    .team_title{
+        padding-right: 0vw;
+    }
+    .about_page_contents{
+        padding: 0vh 10%;
+        gap: 2.5vh;
+    }
+}
+
+@media (max-width: 699px){
+    .primary_button, .secondary_button{
+        height: 50%;
+    }
+    .button_holder{
+        display: flex;
+        flex-wrap: wrap;
+        height: 15%;
+        gap: 1vh;
+        padding-right: 0vw;
+    }
+    .hero_contents{
+        padding: 5vh 2.5vw;
+    }
+    .about_us_content{
+        width: 100%;
+        padding: 2.5vh 5%;
+    }
+    .about_us{
+        height: 50vh;
+    }
+    .about_image{
+        display: none;
+    }
+    .about_us .button_holder{
+        height: 25%;
+    }
+    .service_card{
+        width: 100%;
+        height: 20vh;
+    }
+    .process_more{
+        height: 7vh;
+    }
+    .content_process, .number_sign{
+        padding: 0vh 10%
+    }
+    .process_card{
+        justify-content: flex-start;
+    }
+    .customer_test .process_more{
+        display: none;
+    }
+    .image_holder{
+        height: 50%;
+        background-position: center;
+    }
+    .customer_holder{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .customer_card{
+        width: 100%;
+    }
+    .description{
+        padding: 0% 5%;
+    }
+    .cta .process_more{
+        width: 60%;
+        height: 5vh;
+    }
+    .footer_holder{
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .third_holder_footer{
+        flex-direction: row;
+    }
+    .navbar h2{
+        display: block;
+    }
+    .navbar h4{
+        display: none;
+    }
+    .service_card_page{
+        width: 100%;
+    }
+}
