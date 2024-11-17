@@ -135,6 +135,9 @@
     overflow: hidden;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
+.calc_card{
+    width: 21vw;
+}
 .image_holder{
     width: 100%;
     height: 55%;
@@ -208,6 +211,35 @@
     width: 30.8%;
     background-color: var(--color5);
 }
+.input_box{
+    width: 100%;
+    height: 10vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px var(--color5) solid;
+    color: var(--color1);
+}
+.form_button{
+    background-color: var(--color3);
+    margin-top: 5vh;
+    border: none;
+}
+.map{
+    width: 100%;
+    height: 60vh;
+}
+.calculators{
+    min-height: 90vh;
+}
+.calc_link{
+    width: 95%;
+    height: 7vh;
+}
+.calc_image{
+    height: 30vh;
+    background-position: center;
+}
 
 @media (max-width: 999px){
     .hero_contents{
@@ -276,6 +308,14 @@
     .about_page_contents{
         padding: 0vh 10%;
         gap: 2.5vh;
+    }
+    .contacts{
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .left_contact, .right_contact{
+        width: 100%;
+        padding: 0;
     }
 }
 

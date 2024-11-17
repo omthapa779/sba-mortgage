@@ -7,8 +7,8 @@
                 <h4 class="hero_load">SBA MORTGAGE SOLUTION</h4>
                 <h2  class="hero_load">Your Trusted Partner for Smarter Mortgage Solutions in Australia.</h2>
                 <div class="button_holder flex flex_align_center">
-                    <a href="{{ url('/contact') }}" class="hero_load primary_button flex_center "><h3 class="underline-on-hover">Get Started</h3></a>
-                    <a href="#" class="hero_load secondary_button flex_center "><h3 class="underline-on-hover">Book a Free Consultation</h3></a>
+                    <a href="{{ url('/calculator') }}" class="hero_load primary_button flex_center "><h3 class="underline-on-hover">Get Started</h3></a>
+                    <a href="{{ url('/contact') }}" class="hero_load secondary_button flex_center "><h3 class="underline-on-hover">Book a Free Consultation</h3></a>
                 </div>
             </div>
             <div class="hero_img w_50 flex_center">

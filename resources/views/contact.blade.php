@@ -22,8 +22,16 @@
 
         <form action="{{ route('contact.submit') }}" method="POST" class="forms full_wh">
             @csrf
-            <input type="text" id="name" name="name" placeholder="Your Full Name">
+            <input type="text" id="name" name="name" class="input_box text_weight_400" placeholder="Your Full Name" required>
+            <input type="email" id="email" name="email" class="input_box text_weight_400 margin_s_top" placeholder="Your Email Address" required>
+            <input type="tel" id="phone" name="phone" class="input_box text_weight_400 margin_s_top" placeholder="Your Contact Number" required>
+            <textarea id="message" name="message" row="4" class="input_box text_weight_400 margin_m_top" placeholder="Leave a Message"></textarea>
+
+            <input type="submit" class="input_box form_button underline-on-hover" value="Click to Send">
         </form>
     </div>
+</section>
+<section class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13037.75859408783!2d149.1410503!3d-35.2204242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b17ab4acbec0001%3A0xe168363b8260d746!2sSBA%20Mortgage%20solution!5e0!3m2!1sen!2snp!4v1731085198388!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 @endsection

@@ -15,4 +15,7 @@ class pagescontroller extends Controller
     public function contact(){
         return view('contact');
     }
+    public function calculator_index(){
+        return view('calculator_dashboard');
+    }
 }

@@ -18,7 +18,7 @@
             <div class="content flex flex_align_center">
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/') }}">Home</a></a></h4>
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/about') }}">About</a></h4>
-                <h4><a class="nav_content underline-on-hover" href="#">Calculator</a></h4>
+                <h4><a class="nav_content underline-on-hover" href="{{ url('/calculator') }}">Calculator</a></h4>
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/services') }}">Services</a></h4>
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/contact') }}">Contact</a></h4>
                 <h2><a href="#" class="extend_menu"><i class="ri-menu-line"></i></a></h2>
@@ -34,7 +34,7 @@
                     <a href="{{ url('/') }}" class="underline-on-hover"><h4>Home</h4></a>
                     <a href="{{ url('/about') }}" class="underline-on-hover"><h4>About Us</h4></a>
                     <a href="{{ url('/services') }}" class="underline-on-hover"><h4>Our Services</h4></a>
-                    <a href="#" class="underline-on-hover"><h4>Calculators</h4></a>
+                    <a href="{{ url('/calculator') }}" class="underline-on-hover"><h4>Calculators</h4></a>
                     <a href="{{ url('/contact') }}" class="underline-on-hover"><h4>Contact</h4></a>
                 </div>
                 <div class="second_holder_footer footer_card flex_column gap_vertical_s">
