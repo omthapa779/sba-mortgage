@@ -13,3 +13,7 @@ Route::get('/calculator', [App\Http\Controllers\pagescontroller::class, 'calcula
 
 //post
 Route::post('/contact/submit', [App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
+
+
+//calculators
+Route::get('/calculator/loan_repayment', [App\Http\Controllers\pagescontroller::class, 'loan_repayment']);

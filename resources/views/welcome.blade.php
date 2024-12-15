@@ -24,7 +24,7 @@
 
                 <h4 class="about_description padding_s_right" data-aos="fade-up-right">At SBA Mortgage Solution, we understand that finding the right mortgage is more than just getting a good rate- it's about securing a plan that supports your financial future. With years of experience in the Australian mortgage industry, our team of experts is dedicated to helping you navigate every step of the process, from application to approval. Whether you're buying your first home, investing in property, or refinancing, we're here t make your journey smooth and stress-free.</h4>
                 <div class="button_holder half_button flex flex_align_center" data-aos="fade-up-right">
-                    <a href="{{ url('/about') }}" class="primary_button flex_center"><h3 class="underline-on-hover">Learn More.</h3></a>
+                    <a href="{{ url('/about') }}" class="primary_button about_us_button flex_center"><h3 class="underline-on-hover">Learn More.</h3></a>
                 </div>
             </div>
             <div class="about_image w_50 flex flex_align_fe flex_justify_center">

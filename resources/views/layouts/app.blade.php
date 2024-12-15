@@ -6,14 +6,14 @@
     <title>@yield('title', 'SBA Mortgage Solution')</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/specifics.css">
+    <link rel="stylesheet" href="{{asset('styles/style.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/specifics.css')}}"> 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="flexible_container main_container padding_s_bottom">
         <nav class="navbar flex_justify_sb flex flex_align_center">
-            <img src="./images/logo.png" alt="logo">
+            <img src="{{asset('./images/logo.png')}}" alt="logo">
 
             <div class="content flex flex_align_center">
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/') }}">Home</a></a></h4>
@@ -71,7 +71,7 @@
         AOS.init({});
     });
   </script>
-<script src="logics/logic.js"></script>
-<script src="logics/animations.js"></script>
+<script src="../logics/logic.js"></script>
+<script src="../logics/animations.js"></script>
 </body>
 </html>

@@ -18,4 +18,7 @@ class pagescontroller extends Controller
     public function calculator_index(){
         return view('calculator_dashboard');
     }
+    public function loan_repayment(){
+        return view('calculator.loan_repayment');
+    }
 }
