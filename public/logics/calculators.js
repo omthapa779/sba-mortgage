@@ -39,6 +39,17 @@ function calculateRepayment() {
     document.getElementById('monthlyRepayment').textContent = monthlyRepayment.toFixed(2);
     document.getElementById('totalInterestFee').textContent = (totalInterestPayable + totalFeePayable).toFixed(2);
     document.getElementById('totalPayments').textContent = totalPayments.toFixed(2);
-
-    document.getElementById('calculatorResult').style.display = 'block';
 }
+
+// Set default values
+document.getElementById('loanAmount').value = 400000;
+document.getElementById('interestRate').value = 6;
+document.getElementById('loanTerm').value = 30;
+document.getElementById('repaymentFrequency').value = 'monthly';
+document.getElementById('loanFee').value = 0;
+document.getElementById('feeFrequency').value = 'monthly';
+
+// Run calculation on page load
+window.addEventListener('DOMContentLoaded', (event) => {
+    calculateRepayment();
+});
