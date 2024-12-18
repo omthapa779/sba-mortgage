@@ -43,7 +43,7 @@
                 <h5 class="text_align_c margin_s_top">Looking for a more competitive rate or leverage equity in your existing property to purchase an investment property or to fulfill other personal objectives, we can guide & help you.</h5>
              </div>
              <div class="view_more_button full_wh absolute_position flex_center">
-                <h3><a href="#" class="underline-on-hover">Learn More</a></h3>
+                <h3><a href="{{ url('/services')}}" class="underline-on-hover">Learn More</a></h3>
              </div>
             </div>
 
@@ -54,7 +54,7 @@
                 <h5 class="text_align_c margin_s_top">Looking to purchase your dream car, work commuter or work UTE? Whatever it is we can help you to get it with most competitive rate, and flexible replayments.</h5>
              </div>
              <div class="view_more_button full_wh absolute_position flex_center">
-                <h3><a href="#" class="underline-on-hover">Learn More</a></h3>
+                <h3><a href="{{ url('/services')}}" class="underline-on-hover">Learn More</a></h3>
              </div>
             </div>
             <div class="service_card" style="background-image: url('https://images.pexels.com/photos/7937317/pexels-photo-7937317.jpeg');">
@@ -64,7 +64,7 @@
                 <h5 class="text_align_c margin_s_top">Building your first home or dream home? Whatever it is we can source you the most flexible & competitive rate construction home loan and also provide the detailed information about how construction loan works, what involves, and what to expect, etc</h5>
              </div>
              <div class="view_more_button full_wh absolute_position flex_center">
-                <h3><a href="#" class="underline-on-hover">Learn More</a></h3>
+                <h3><a href="{{ url('/services')}}" class="underline-on-hover">Learn More</a></h3>
              </div>
             </div>
             <div class="service_card" style="background-image: url('https://images.pexels.com/photos/4246234/pexels-photo-4246234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
@@ -80,8 +80,6 @@
             <h4 class="small_title" data-aos="fade-up-right">OUR PROCESS</h4>
             <div class="title_holder_process flex flex_justify_sb">
                 <h2 class="big_title" data-aos="fade-up-right">HOW IT WORKS?</h2>
-                
-                <a href="#" class="primary_button process_more flex_center"><h3 class="underline-on-hover">Learn More</h3></a>
             </div>
             <div class="process_holder flexible_container flex  flex_justify_sb margin_m_top">
                 <div class="process_card flex_column flex_justify_center">

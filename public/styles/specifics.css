@@ -138,7 +138,6 @@
 .calc_card{
     width: 21vw;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-
 }
 .image_holder{
     width: 100%;
@@ -243,22 +242,27 @@
     height: 30vh;
     background-position: center;
 }
-.input-group{
-    width: 48.5%;
+
+.calculator_main , .loan_comparision, .rentVsBuying{
+    background-color: var(--color1);
 }
-.input_calc{
-    width: 100%;
-    height: 7vh;
-    background: none;
-    color: var(--color1);
-    border: 0.1vw var(--color5) solid;
-    padding: 0vh 2.5%;
-    appearance: none;
+
+.calculator_main iframe{
+    border: none;
+    min-height: 700px;
+    margin-top: 2.5%;
 }
-.input_calc option{
-    background-color: var(--color2);
-    color: var(--color1);
+.loan_comparision iframe{
+    border: none;
+    min-height: 850px;
+    margin-top: 2.5%;
 }
+.rentVsBuying iframe{
+    border: none;
+    min-height: 900px;
+    margin-top: 2.5%;
+}
+
 
 @media (max-width: 999px){
     .hero_contents{
@@ -342,6 +346,9 @@
     .left_contact, .right_contact{
         width: 100%;
         padding: 0;
+    }
+    .loan_comparision iframe{
+        min-height: 800px;
     }
 }
 
@@ -428,5 +435,15 @@
     }
     .service_card_page{
         width: 100%;
+    }
+    .calculator_main iframe{
+        min-height: 120vh;
+        overflow: hidden;
+    }
+    .loan_comparision iframe{
+        min-height: 1600px;
+    }
+    .rentVsBuying iframe{
+        min-height: 1750px;
     }
 }
