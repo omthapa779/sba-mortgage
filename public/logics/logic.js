@@ -30,3 +30,35 @@ const lenis = new Lenis({
   lenis.on('scroll', (e) => {
     console.log(e);
   });
+
+
+  function menu_extended() {
+    const menu = document.querySelector('.menu_extended');
+    const body = document.querySelector('body');
+
+    if (menu.style.display === 'block') {
+        // Animate menu out and enable content interaction
+        gsap.to(menu, {
+            opacity: 0,
+            duration: 0.5,
+            onComplete: () => {
+                menu.style.display = 'none';
+                body.style.overflow = 'auto'; // Enable scrolling
+            }
+        });
+    } else {
+        // Show menu with animation and disable content interaction
+        menu.style.display = 'flex';
+        gsap.fromTo(
+            menu,
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 0.5,
+                onStart: () => {
+                    body.style.overflow = 'hidden'; // Disable scrolling
+                }
+            }
+        );
+    }
+}
