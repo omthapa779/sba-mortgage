@@ -27,16 +27,6 @@
             <h3 class="text_color_bl">Construction Loan</h3>
             <h4 class="text_color_bl">Building your first home or dream home? Whatever it is we can source you the most flexible & competitive rate construction home loan and also provide the detailed information about how construction loans works, what involves, and what to expect etc.</h4>
         </div>
-        <div class="service_card_page border_r_s padding_s flex_column gap_vertical_m">
-            <h1 class="text_color_al">05</h1>
-            <h3 class="text_color_bl">Refinance</h3>
-            <h4 class="text_color_bl">Looking for a more competitive rate or leverage equity in your existing property to purchase an investment property or to fulfill other personal objectives, We can guide & help you.</h4>
-        </div>
-        <div class="service_card_page border_r_s padding_s flex_column gap_vertical_m">
-            <h1 class="text_color_al">06</h1>
-            <h3 class="text_color_bl">Refinance</h3>
-            <h4 class="text_color_bl">Looking for a more competitive rate or leverage equity in your existing property to purchase an investment property or to fulfill other personal objectives, We can guide & help you.</h4>
-        </div>
     </div>
 </section>
 <section class="cta flexible_solution flex_center padding_s" style="background-image: url('https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">

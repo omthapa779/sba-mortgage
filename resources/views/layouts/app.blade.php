@@ -21,7 +21,7 @@
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/calculator') }}">Calculator</a></h4>
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/services') }}">Services</a></h4>
                 <h4><a class="nav_content underline-on-hover" href="{{ url('/contact') }}">Contact</a></h4>
-                <h2><a href="#" class="extend_menu"><i class="ri-menu-line"></i></a></h2>
+                <h2><a onclick="menu_extended()" class="extend_menu"><i class="ri-menu-line"></i></a></h2>
             </div>
         </nav>
 
@@ -62,6 +62,20 @@
         <div class="loading_holder">
             <div class="loading_bar full_wh"></div>
         </div>
+    </div>
+
+    <div class="menu_extended flex_column padding_m flex_justify_sb flex_align_center ">
+        <img src="{{asset('./images/logo.png')}}" alt="logo" class="logo_extended">
+
+        <div class="menu_content flex_column flex_center full_wh">
+            <h2><a class="nav_content underline-on-hover" href="{{ url('/') }}">Home</a></h2><br>
+            <h2><a class="nav_content underline-on-hover" href="{{ url('/about') }}">About</a></h2><br>
+            <h2><a class="nav_content underline-on-hover" href="{{ url('/calculator') }}">Calculators</a></h2><br>
+            <h2><a class="nav_content underline-on-hover" href="{{ url('/services') }}">Services</a></h2><br>
+            <h2><a class="nav_content underline-on-hover" href="{{ url('/contact') }}">Contact</a></h2>
+        </div>
+
+        <h4 class="copyright text_align_c">Website Built by <br> Tilasmi</h4>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 
