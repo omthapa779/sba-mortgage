@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 
-
-//get
-Route::get('/', function () {return view('welcome');});
+Route::get('/', [App\Http\Controllers\pagescontroller::class, 'welcome']);
 Route::get('/about', [App\Http\Controllers\pagescontroller::class, 'about']);
 Route::get('/services', [App\Http\Controllers\pagescontroller::class, 'services']);
 Route::get('/contact', [App\Http\Controllers\pagescontroller::class, 'contact']);

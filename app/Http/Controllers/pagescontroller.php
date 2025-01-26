@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class pagescontroller extends Controller
 {
+    public function welcome(){
+        return view('welcome');
+    }
     public function about(){
         return view('about');
     }

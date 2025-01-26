@@ -11,10 +11,13 @@ html,body{
     box-sizing: border-box;
 }
 :root{
-    --color1: white;
-    --color2: black;
+    --color1: rgb(240, 233, 233);
+    --color2: rgb(23, 23, 23);
     --color3: #129fd9;
     --color4: grey;
+}
+.white_cl{
+    color: var(--color1);
 }
 a{
     color: white;
@@ -69,6 +72,15 @@ h5{
 }
 .h_75vh{
     height: 75vh;
+}
+.h_fc{
+    height: fit-content;
+}
+.h_90vh{
+    height: 90vh;
+}
+.h_100{
+    height: 100%;
 }
 
 /* flexs*/
@@ -135,6 +147,7 @@ h5{
     position: absolute;
     z-index: 900;
 }
+
 
 /* buttons */
 .button_holder{
@@ -264,6 +277,9 @@ h5{
 .text_align_c{
     text-align: center;
 }
+.text_align_j{
+    text-align: justify;
+}
 .text_weight_400{
     font-weight: 400;
 }
@@ -275,6 +291,9 @@ h5{
 }
 
 /* gaps */
+.gap_xs{
+    gap: 1vw;
+}
 .gap_s{
     gap: 2.5vw;
 }

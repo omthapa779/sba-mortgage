@@ -16,12 +16,7 @@
             <img src="{{asset('./images/logo.png')}}" alt="logo">
 
             <div class="content flex flex_align_center">
-                <h4><a class="nav_content underline-on-hover" href="{{ url('/') }}">Home</a></a></h4>
-                <h4><a class="nav_content underline-on-hover" href="{{ url('/about') }}">About</a></h4>
-                <h4><a class="nav_content underline-on-hover" href="{{ url('/calculator') }}">Calculator</a></h4>
-                <h4><a class="nav_content underline-on-hover" href="{{ url('/services') }}">Services</a></h4>
-                <h4><a class="nav_content underline-on-hover" href="{{ url('/contact') }}">Contact</a></h4>
-                <h2><a onclick="menu_extended()" class="extend_menu"><i class="ri-menu-line"></i></a></h2>
+                <h3><a onclick="menu_extended()" class="extend_menu" style="cursor: pointer; "><i class="ri-menu-line"></i> Menu</a></h3>
             </div>
         </nav>
 
@@ -64,18 +59,54 @@
         </div>
     </div>
 
-    <div class="menu_extended flex_column padding_m flex_justify_sb flex_align_center ">
-        <img src="{{asset('./images/logo.png')}}" alt="logo" class="logo_extended">
-
-        <div class="menu_content flex_column flex_center full_wh">
-            <h2><a class="nav_content underline-on-hover" href="{{ url('/') }}">Home</a></h2><br>
-            <h2><a class="nav_content underline-on-hover" href="{{ url('/about') }}">About</a></h2><br>
-            <h2><a class="nav_content underline-on-hover" href="{{ url('/calculator') }}">Calculators</a></h2><br>
-            <h2><a class="nav_content underline-on-hover" href="{{ url('/services') }}">Services</a></h2><br>
-            <h2><a class="nav_content underline-on-hover" href="{{ url('/contact') }}">Contact</a></h2>
+    <div class="menu_extended  flex_column padding_m">
+        <div class="close_button_holder h_fc flex flex_justify_fe">
+            <div class="content flex flex_align_center">
+                <h3><a onclick="menu_close()" class="extend_menu" style="cursor: pointer; "><i class="ri-close-line"></i> Close</a></h3>
+            </div>
         </div>
+      <div class="menu_links_holder w_100 h_100 flex flex_justify_sb gap_s ">
+        <div class="menu_divs w_100 h_100 flex_column flex_justify_sb">
+            <div class="menu_links flex_column">
+                <h2 class="text_color_al">Quick Links</h2><br>
+                <h3><a href="/" class="nav_content">Home</a></h3>
+                <h3><a href="/about" class="nav_content">About</a></h3>
+                <h3><a href="/services" class="nav_content">Services</a></h3>
+                <h3><a href="/calculator" class="nav_content">Calculators</a></h3>
+                <h3><a href="/contact" class="nav_content">Contact</a></h3>
+            </div>
 
-        <h4 class="copyright text_align_c">Website Built by <br> Tilasmi</h4>
+            <h2 class="white_cl">SBA MORTGAGE SOLUTION</h2>
+        </div>
+        <div class="menu_divs w_100 h_100 flex_column ">
+            <div class="menu_links flex_column">
+                <h2 class="text_color_al">Calculators</h2><br>
+                <h3><a href="/" class="nav_content">Loan Repayment</a></h3>
+                <h3><a href="/" class="nav_content">Stamp Duty</a></h3>
+                <h3><a href="/" class="nav_content">Saving Goals</a></h3>
+                <h3><a href="/" class="nav_content">Extra Repayment</a></h3>
+                <h3><a href="/" class="nav_content">Offset</a></h3>
+                <h3><a href="/" class="nav_content">How Long to Repay</a></h3>
+                <h3><a href="/" class="nav_content">Loan Comparision</a></h3>
+                <h3><a href="/" class="nav_content">Property Buying Cost</a></h3>
+                <h3><a href="/" class="nav_content">Rent VS Buying</a></h3>
+                <h3><a href="/" class="nav_content">Fortnightly Repayment</a></h3>
+                <h3><a href="/" class="nav_content">Borrowing Power</a></h3>
+            </div>
+        </div>
+        <div class="menu_divs w_100 h_100 flex_column flex_justify_sb">
+        <div class="menu_links flex_column">
+                <h2 class="text_color_al">Recent Blogs</h2><br>
+                <h3><a href="/" class="nav_content">Home</a></h3>
+                <h3><a href="/about" class="nav_content">About</a></h3>
+                <h3><a href="/services" class="nav_content">Services</a></h3>
+                <h3><a href="/calculator" class="nav_content">Calculators</a></h3>
+                <h3><a href="/contact" class="nav_content">Contact</a></h3>
+            </div>
+
+            <h2 class="white_cl">Site Built by Tilasmi</h2>
+        </div>
+      </div>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 

@@ -27,10 +27,10 @@
         <div class="team_card full_wh">
            <div class="team_card_holders full_wh flex flex_justify_sb">
             <div class="content_holder w_75 padding_s flex_column flex_justify_center">
-                <h3>Brock Berry</h3>
+                <h3>Bibek Lohani</h3>
                 <h5 class="text_weight_400">Owner / Founder</h5>
             </div>
-            <div class="image_holder_team" style="background-image: url('https://images.pexels.com/photos/28859279/pexels-photo-28859279/free-photo-of-stylish-young-man-in-urban-setting-portrait.jpeg')"></div>
+            <div class="image_holder_team" style="background-image: url('{{ asset('./images/team_owner.jpg') }}')"></div>
            </div>  
            <div class="hover_card w_75"></div>      
         </div>
@@ -43,49 +43,7 @@
             <div class="image_holder_team" style="background-image: url('https://images.pexels.com/photos/28859279/pexels-photo-28859279/free-photo-of-stylish-young-man-in-urban-setting-portrait.jpeg')"></div>
            </div>  
            <div class="hover_card w_75"></div>      
-        </div>
-        <div class="team_card full_wh">
-           <div class="team_card_holders full_wh flex flex_justify_sb">
-            <div class="content_holder w_75 padding_s flex_column flex_justify_center">
-                <h3>Brock Berry</h3>
-                <h5 class="text_weight_400">Owner / Founder</h5>
-            </div>
-            <div class="image_holder_team" style="background-image: url('https://images.pexels.com/photos/28859279/pexels-photo-28859279/free-photo-of-stylish-young-man-in-urban-setting-portrait.jpeg')"></div>
-           </div>  
-           <div class="hover_card w_75"></div>      
-        </div>
-        <div class="team_card full_wh">
-           <div class="team_card_holders full_wh flex flex_justify_sb">
-            <div class="content_holder w_75 padding_s flex_column flex_justify_center">
-                <h3>Brock Berry</h3>
-                <h5 class="text_weight_400">Owner / Founder</h5>
-            </div>
-            <div class="image_holder_team" style="background-image: url('https://images.pexels.com/photos/28859279/pexels-photo-28859279/free-photo-of-stylish-young-man-in-urban-setting-portrait.jpeg')"></div>
-           </div>  
-           <div class="hover_card w_75"></div>      
-        </div>
-
-        <div class="team_card full_wh">
-           <div class="team_card_holders full_wh flex flex_justify_sb">
-            <div class="content_holder w_75 padding_s flex_column flex_justify_center">
-                <h3>Brock Berry</h3>
-                <h5 class="text_weight_400">Owner / Founder</h5>
-            </div>
-            <div class="image_holder_team" style="background-image: url('https://images.pexels.com/photos/28859279/pexels-photo-28859279/free-photo-of-stylish-young-man-in-urban-setting-portrait.jpeg')"></div>
-           </div>  
-           <div class="hover_card w_75"></div>      
-        </div>
-
-        <div class="team_card full_wh">
-           <div class="team_card_holders full_wh flex flex_justify_sb">
-            <div class="content_holder w_75 padding_s flex_column flex_justify_center">
-                <h3>Brock Berry</h3>
-                <h5 class="text_weight_400">Owner / Founder</h5>
-            </div>
-            <div class="image_holder_team" style="background-image: url('https://images.pexels.com/photos/28859279/pexels-photo-28859279/free-photo-of-stylish-young-man-in-urban-setting-portrait.jpeg')"></div>
-           </div>  
-           <div class="hover_card w_75"></div>      
-        </div>
+        </div>    
     </div>
 </section>
 @endsection

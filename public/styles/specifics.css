@@ -1,21 +1,25 @@
 :root{
-    --color1: white;
-    --color2: black;
+    --color1: rgb(240, 233, 233);
+    --color2: rgb(23, 23, 23);
     --color3: #129fd9;
     --color4: grey;
     --color5: rgb(228, 228, 228);
 }
 .main_container{
   min-height: 100vh;
-  background-color: black;
+  background-color: var(--color2);   
   position: absolute;
   z-index: 900;
   display: none;
   color: var(--color1);
 }
+.about_us, .services_section{
+    background-color: var(--color1);
+}
+
 .loading{
     min-height: 100vh;
-    background-color: black;
+    background-color: var(--color2);
     position: absolute;
     z-index: 999;
     opacity: 100%;
@@ -43,6 +47,7 @@
     width: 100%;
     height: 10vh;
     padding: 2vh 2.5%;
+    background: none;
 }
 .navbar img{
     object-fit: contain;
@@ -55,31 +60,8 @@
     font-weight: 500;
     color: white;
 }
-.hero_section{
-    width: 100%;
-    height: 90vh;
-    padding: 2.5vh 2.5%;
-    overflow: hidden;
-    position: relative;
-}
-.hero_contents h4, .small_title, .process_title, .alter_text{
+.small_title, .process_title, .alter_text{
     color: var(--color3);
-}
-.hero_load{
-    position: relative;
-    top: 50vh;
-}
-.hero_img{
-    background-color: red;
-    overflow: hidden;
-}
-.hero_img video{
-    object-fit: cover;
-    width: 100%;
-    height: 120%;
-}
-.about_us{
-    height: 100vh;
 }
 .about_description{
     margin-top: 2.5vh;
@@ -89,31 +71,10 @@
     width: 90%;
     height: 90%;
 }
-.services .big_title{
-    color: var(--color2);
-}
-.service_card_holder{
-    gap: 2.5vw;
-    position: relative;
-}
-.service_card{
-    width: 45%;
-    height: 35vh;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    border-radius: 0.5vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative;
-}
+
 .overlay{
     position: absolute;
     z-index: 700;
-}
-.service_content_holder{
-    position: absolute;
-    z-index: 900;
-    top: 0;
 }
 .view_more_button{
     top: 150%;
@@ -159,9 +120,6 @@
 }
 .footer_title_large{
     color: var(--color3);
-}
-.navbar h2{
-    display: none;
 }
 .about_us_page{
     height: 90vh;
@@ -272,31 +230,101 @@
     opacity: 0; /* Fully transparent by default */
     overflow: hidden;
 }
-.logo_extended{
-    width: 35vw;
-}
-.copyright{
-    color: var(--color4);
-}
 
+.hero_section{
+    position: relative;
+    overflow: hidden;
+}
+.hero_video{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 50;
+}
+.hero_contents{
+    position: absolute;
+    z-index: 100;
+}
+.overlay_hero{
+    background: rgba(15, 15, 15, 0.588); /* Transparent white */
+    backdrop-filter: blur(0.15vw); /* Blur effect */
+    -webkit-backdrop-filter: blur(0.2vw);
+    position: absolute;
+    z-index: 90;
+}
+.hero_button_main{
+    width: 20vw;
+    height: 7vh;
+    background-color: var(--color2);
+    display: block;
+    transition: 0.6s all ease;
+}
+.hero_button_secondary{
+    width: 20vw;
+    height: 7vh;
+    background-color: var(--color3);
+    display: block;
+    white-space: nowrap;
+    color: var(--color2);
+    transition: all 0.6s ease;
+}
+.extend_menu{
+    transition: all 0.6s ease;
+    color: var(--color1);
+}
+.extend_menu:hover{
+    transition: all 0.6s ease;
+    color: var(--color3);
+}
+button{
+    cursor: pointer; 
+}
+.hero_button_main:hover, .hero_button_secondary:hover{
+    border-radius: 0.7vw;
+    transform: scale(1.06);  
+    transition: all 0.6s ease;
+}
+.about_img{
+    object-fit: contain;
+    object-position: bottom;
+    height: 75vh;
+    padding-top: 5vh;
+}
+.stats{
+    background-color: var(--color2);
+    border-radius: 0.7vw;
+}
+.service_card{
+    height: 40vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.6s ease;
+    position: relative;
+}
+.service_card:hover{
+    transition: all 0.6s ease;
+    transform: translateY(-6%);
+}
+.service_overlay{
+    background-color: var(--color2);
+    opacity: 80%;
+    position: absolute;
+    z-index: 50;
+}
+.service_title{
+    background-color: var(--color3);
+    color: var(--color2);
+    width: fit-content;
+    padding: 1% 5%;
+    margin-bottom: 2.5%;
+}
+.service_content_holder{
+    position: absolute;
+    z-index: 900;
+    color: var(--color1);
+}
 @media (max-width: 999px){
-    .hero_contents{
-        width: 100%;
-        position: absolute;
-        z-index: 100;
-        padding: 2.5vh; 
-    }
-    .hero_img{
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-    }
-    .hero_section{
-        padding: 0;
-    }
-    .about_us{
-        height: 70vh;
-    }
     .half_button, .upper_team_right, .team_right, .team_left{
         width: 100%;
     }
@@ -304,7 +332,7 @@
         width: 35%;
         height: 5vh;
     }
-    .services, .customer_test {
+     .customer_test {
         min-height: 91vh;
     }
     .process_holder {
@@ -336,9 +364,6 @@
     .footer_title_large{
         margin-top: 2.5vh;
     }
-    .teams{
-        flex-direction: column;
-    }
     .lower_right_team{
         display: none;
     }
@@ -365,6 +390,22 @@
     .loan_comparision iframe{
         min-height: 800px;
     }
+    .hero_title{
+        width: 75%;
+    }
+    .hero_button_holder, .teams{
+        flex-direction: column;
+    }
+    .hero_button_main, .hero_button_secondary {
+        width: 100%;
+        padding: 5vw;
+    }
+    .left_about{
+        display: none;
+    }
+    .stats{
+        margin-top: 1.5vh;
+    }
 }
 
 @media (max-width: 699px){
@@ -378,31 +419,8 @@
         gap: 1vh;
         padding-right: 0vw;
     }
-    .hero_contents{
-        padding: 5vh 2.5vw;
-    }
     .process_card{
         margin-top: 2.5vh;
-    }
-    .about_us_content{
-        width: 100%;
-        padding: 2.5vh 5%;
-    }
-    .about_us_button{
-        height: 100%;
-    }
-    .about_us{
-        height: 55vh;
-    }
-    .about_image{
-        display: none;
-    }
-    .about_us .button_holder{
-        height: 25%;
-    }
-    .service_card{
-        width: 100%;
-        height: 20vh;
     }
     .process_more{
         height: 7vh;
@@ -460,5 +478,15 @@
     }
     .rentVsBuying iframe{
         min-height: 1750px;
+    }
+    .hero_button_main, .hero_button_secondary {
+        width: 100%;
+        padding: 5vw;
+    }
+    .service_card_holder{
+        flex-direction: column;
+    }
+    .service_card{
+        height: 30vh;
     }
 }
