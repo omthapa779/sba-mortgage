@@ -29,6 +29,7 @@
                     <a href="{{ url('/') }}" class="underline-on-hover"><h4>Home</h4></a>
                     <a href="{{ url('/about') }}" class="underline-on-hover"><h4>About Us</h4></a>
                     <a href="{{ url('/services') }}" class="underline-on-hover"><h4>Our Services</h4></a>
+                    <a href="{{ url('/blogs') }}" class="underline-on-hover"><h4>Blogs</h4></a>
                     <a href="{{ url('/calculator') }}" class="underline-on-hover"><h4>Calculators</h4></a>
                     <a href="{{ url('/contact') }}" class="underline-on-hover"><h4>Contact</h4></a>
                 </div>
@@ -97,12 +98,7 @@
         </div>
         <div class="menu_divs menu_div3 w_100 h_100 flex_column flex_justify_sb">
         <div class="menu_links flex_column">
-                <h2 class="text_color_al">Recent Blogs</h2><br>
-                <h3><a href="/" class="nav_content">Home</a></h3>
-                <h3><a href="/about" class="nav_content">About</a></h3>
-                <h3><a href="/services" class="nav_content">Services</a></h3>
-                <h3><a href="/calculator" class="nav_content">Calculators</a></h3>
-                <h3><a href="/contact" class="nav_content">Contact</a></h3>
+                
             </div>
 
             <h3 class="white_cl">Site Built by Tilasmi</h3>
