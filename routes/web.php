@@ -2,12 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', [App\Http\Controllers\pagescontroller::class, 'welcome']);
 Route::get('/about', [App\Http\Controllers\pagescontroller::class, 'about']);
 Route::get('/services', [App\Http\Controllers\pagescontroller::class, 'services']);
 Route::get('/contact', [App\Http\Controllers\pagescontroller::class, 'contact']);
 Route::get('/calculator', [App\Http\Controllers\pagescontroller::class, 'calculator_index']);
+
+Route::get('/blogs', [BlogController::class, 'index']);
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
+Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
+Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
+
 
 //post
 Route::post('/contact/submit', [App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');

@@ -170,6 +170,16 @@
     width: 30.8%;
     background-color: var(--color5);
 }
+.input_box {
+    background: none;
+    border: none;
+    border-bottom: 0.2vw solid white;
+    padding: 1vh 0.2vw;
+    width: 100%;
+    margin-bottom: 2vh;
+    outline: none;
+    color: white;
+}
 .input_button{
     width: 100%;
     height: 10vh;
@@ -324,6 +334,41 @@ button{
     z-index: 900;
     color: var(--color1);
 }
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.blog-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-meta {
+    color: #666;
+    border-top: 1px solid #eee;
+}
+.blog-card img {
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+}
+
+.h_200 {
+    height: 200px;
+}
+
+.object_fit_cover {
+    object-fit: cover;
+}
 @media (max-width: 999px){
     .half_button, .upper_team_right, .team_right, .team_left{
         width: 100%;
@@ -405,6 +450,15 @@ button{
     }
     .stats{
         margin-top: 1.5vh;
+    }
+    .menu_div3{
+        display: none;
+    }
+    .menu_links_holder {
+        padding: 5vh 0vw 0vh;
+    }
+    .input_box {
+        margin-bottom: 1vh;
     }
 }
 
@@ -488,5 +542,14 @@ button{
     }
     .service_card{
         height: 30vh;
+    }
+    .menu_divs {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .menu_links_holder {
+        padding: 5vh 0vw;
+        flex-direction: column;
     }
 }

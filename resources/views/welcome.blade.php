@@ -12,7 +12,7 @@
                 <h2 class="hero_title text_align_c w_50 h_fc">Your Trusted Partner for Smarter Mortgage Solutions in Australia.</h2>
                 <div class="hero_button_holder h_fc margin_s_top flex gap_xs">
                     <a href="/calculator" class="hero_button_main flex_center"><h3 class="flex_center w_100 h_100">Get Started</h3></a>
-                    <a href="/contact" class="hero_button_secondary flex_center"><h3 class="flex_center w_100 h_100">Book an Appointment</h3></a>
+                    <a href="/contact" class="hero_button_secondary flex_center"><h3 class="flex_center w_100 h_100">Enquire Now !</h3></a>
                 </div>
             </div>
         </section>
@@ -129,10 +129,6 @@
 
             </div>
         </section>
-
-
-        <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25515848' frameborder='0' width='100%' height='1000'></iframe>
-
 
         <!-- review section -->
 

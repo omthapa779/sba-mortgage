@@ -12,6 +12,9 @@ class pagescontroller extends Controller
     public function about(){
         return view('about');
     }
+      public function blogs(){
+        return view('blogs');
+    }
     public function services(){
         return view('services');
     }

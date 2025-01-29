@@ -27,7 +27,7 @@
             <input type="tel" id="phone" name="phone" class="input_box text_weight_400 margin_s_top" placeholder="Your Contact Number" required>
             <textarea id="message" name="message" row="4" class="input_box text_weight_400 margin_m_top" placeholder="Leave a Message"></textarea>
 
-            <input type="submit" class="input_box form_button underline-on-hover" value="Click to Send">
+            <input type="submit" class="input_box form_button underline-on-hover" value="Enquire Now!">
         </form>
     </div>
 </section>
