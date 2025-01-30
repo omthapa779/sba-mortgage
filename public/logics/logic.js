@@ -24,42 +24,6 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-// MENU EXTENDED TOGGLE
-function menu_extended() {
-    const menu = document.querySelector('.menu_extended');
-    const body = document.querySelector('body');
-
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'flex';
-        gsap.fromTo(
-            menu,
-            { opacity: 0 },
-            {
-                opacity: 1,
-                duration: 0.5,
-                onStart: () => {
-                    body.style.overflow = 'hidden'; // Disable scrolling
-                },
-            }
-        );
-    }
-}
-
-// MENU CLOSE TOGGLE
-function menu_close() {
-    const menu = document.querySelector('.menu_extended');
-    const body = document.querySelector('body');
-
-    gsap.to(menu, {
-        opacity: 0,
-        duration: 0.5,
-        onComplete: () => {
-            menu.style.display = 'none';
-            body.style.overflow = 'auto'; // Enable scrolling
-        },
-    });
-}
-
 
 //preview for blog upload
 document.getElementById('image-upload').addEventListener('change', function(e) {
@@ -73,3 +37,49 @@ document.getElementById('image-upload').addEventListener('change', function(e) {
         reader.readAsDataURL(file);
     }
 });
+
+function menu_open() {
+    const menu = document.querySelector('.menu_extended');
+    const links = document.querySelectorAll('.nav-link');
+    const body = document.querySelector('body');
+
+    menu.style.display = 'flex';
+    
+    // Main menu animation
+    gsap.fromTo(menu, 
+        { opacity: 0 }, 
+        { 
+            opacity: 1, 
+            duration: 0.5,
+            onStart: () => {
+                body.style.overflow = 'hidden';
+            }
+        }
+    );
+
+    // Staggered links animation
+    gsap.fromTo(links, 
+        { y: 30, opacity: 0 }, 
+        {
+            y: 0,
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.8,
+            ease: "power2.out"
+        }
+    );
+}
+
+function menu_close() {
+    const menu = document.querySelector('.menu_extended');
+    const body = document.querySelector('body');
+
+    gsap.to(menu, {
+        opacity: 0,
+        duration: 0.5,
+        onComplete: () => {
+            menu.style.display = 'none';
+            body.style.overflow = 'auto';
+        }
+    });
+}

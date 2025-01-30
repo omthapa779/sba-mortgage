@@ -16,7 +16,7 @@
             <img src="{{asset('./images/logo.png')}}" alt="logo">
 
             <div class="content flex flex_align_center">
-                <h3><a onclick="menu_extended()" class="extend_menu" style="cursor: pointer; "><i class="ri-menu-line"></i> Menu</a></h3>
+                <h3><a onclick="menu_open()" class="extend_menu" style="cursor: pointer; "><i class="ri-menu-line"></i> Menu</a></h3>
             </div>
         </nav>
 
@@ -60,51 +60,102 @@
         </div>
     </div>
 
-    <div class="menu_extended  flex_column padding_m">
-        <div class="close_button_holder h_fc flex flex_justify_fe">
-            <div class="content flex flex_align_center">
-                <h3><a onclick="menu_close()" class="extend_menu" style="cursor: pointer; "><i class="ri-close-line"></i> Close</a></h3>
-            </div>
-        </div>
-      <div class="menu_links_holder w_100 h_100 flex flex_justify_sb gap_s ">
-        <div class="menu_divs w_100 h_100 flex_column flex_justify_sb">
-            <div class="menu_links flex_column">
-                <h2 class="text_color_al">Quick Links</h2><br>
-                <h3><a href="/" class="nav_content">Home</a></h3>
-                <h3><a href="/about" class="nav_content">About</a></h3>
-                <h3><a href="/services" class="nav_content">Services</a></h3>
-                <h3><a href="/blogs" class="nav_content">Blogs</a></h3>
-                <h3><a href="/calculator" class="nav_content">Calculators</a></h3>
-                <h3><a href="/contact" class="nav_content">Contact</a></h3>
-            </div>
-
-            <h2 class="white_cl">SBA MORTGAGE SOLUTION</h2>
-        </div>
-        <div class="menu_divs w_100 h_100 flex_column ">
-            <div class="menu_links flex_column">
-                <h2 class="text_color_al">Calculators</h2><br>
-                <h3><a href="/" class="nav_content">Loan Repayment</a></h3>
-                <h3><a href="/" class="nav_content">Stamp Duty</a></h3>
-                <h3><a href="/" class="nav_content">Saving Goals</a></h3>
-                <h3><a href="/" class="nav_content">Extra Repayment</a></h3>
-                <h3><a href="/" class="nav_content">Offset</a></h3>
-                <h3><a href="/" class="nav_content">How Long to Repay</a></h3>
-                <h3><a href="/" class="nav_content">Loan Comparision</a></h3>
-                <h3><a href="/" class="nav_content">Property Buying Cost</a></h3>
-                <h3><a href="/" class="nav_content">Rent VS Buying</a></h3>
-                <h3><a href="/" class="nav_content">Fortnightly Repayment</a></h3>
-                <h3><a href="/" class="nav_content">Borrowing Power</a></h3>
-            </div>
-        </div>
-        <div class="menu_divs menu_div3 w_100 h_100 flex_column flex_justify_sb">
-        <div class="menu_links flex_column">
-                
-            </div>
-
-            <h3 class="white_cl">Site Built by Tilasmi</h3>
-        </div>
+    <div class="menu_extended">
+      <div class="close-button" onclick="menu_close()">
+      <h3><i class="ri-close-line"></i>
+        Close</h3>
       </div>
+
+    <div class="nav-container">
+        <!-- Left Section: Quick Links -->
+        <div class="nav-section">
+            <div class="nav-header">
+                <h2 class="white_cl">Quick Links</h2>
+            </div>
+            
+            <div class="nav-links-grid">
+                <a href="/" class="nav-card">
+                    <h4><i class="ri-home-line"></i><br>
+                    <span>Home</span></h4></h4>
+                </a>
+                <a href="/about" class="nav-card">
+                    <h4><i class="ri-information-line"></i><br>
+                    <span>About</span></h4>
+                </a>
+                <a href="/services" class="nav-card">
+                    <h4><i class="ri-service-line"></i><br>
+                    <span>Services</span></h4>
+                </a>
+                <a href="/blogs" class="nav-card">
+                    <h4><i class="ri-article-line"></i><br>
+                    <span>Blogs</span></h4>
+                </a>
+                <a href="/calculator" class="nav-card">
+                    <h4><i class="ri-calculator-line"></i><br>
+                    <span>Calculators</span></h4>
+                </a>
+                <a href="/contact" class="nav-card">
+                    <h4><i class="ri-contacts-line"></i><br>
+                    <span>Contact</span></h4>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Section: Calculators -->
+        <div class="nav-section">
+            <div class="nav-header">
+                <h2 class="white_cl">Calculators</h2>
+            </div>
+            
+            <div class="calc-links-grid">
+                <a href="/calculator/loan_repayment" class="calc-card">
+                    <h4><i class="ri-money-dollar-circle-line"></i><br>
+                    <span>Loan Repayment</span></h4>
+                </a>
+                <a href="/calculator/stamp_duty" class="calc-card">
+                    <h4><i class="ri-file-list-3-line"></i><br>
+                    <span>Stamp Duty</span></h4>
+                </a>
+                <a href="/calculator/saving_goals" class="calc-card">
+                    <h4><i class="ri-money-dollar-box-line"></i><br>
+                    <span>Saving Goals</span></h4>
+                </a>
+                <a href="/calculator/extra_repayment" class="calc-card">
+                    <h4><i class="ri-funds-line"></i><br>
+                    <span>Extra Repayment</span></h4>
+                </a>
+                <a href="/calculator/offset_calc" class="calc-card">
+                    <h4><i class="ri-exchange-funds-line"></i><br>
+                    <span>Offset</span></h4>
+                </a>
+                <a href="/calculator/how_long_calc" class="calc-card">
+                    <h4><i class="ri-timer-line"></i><br>
+                    <span>How Long to Repay</span></h4>
+                </a>
+                <a href="/calculator/loan_compare" class="calc-card">
+                    <h4><i class="ri-scales-line"></i><br>
+                    <span>Loan Comparison</span></h4>
+                </a>
+                <a href="/calculator/property_buying" class="calc-card">
+                    <h4><i class="ri-home-gear-line"></i><br>
+                    <span>Property Buying Cost</span></h4>
+                </a>
+                <a href="/calculator/rentVsBuying" class="calc-card">
+                    <h4><i class="ri-contrast-2-line"></i><br>
+                    <span>Rent VS Buying</span></h4>
+                </a>
+                <a href="/calculator/fortnightly_repay" class="calc-card">
+                    <h4><i class="ri-calendar-2-line"></i><br>
+                    <span>Fortnightly Repayment</span></h4>
+                </a>
+            </div>
+        </div>
     </div>
+
+    <div class="brand-footer">
+        <h2>SBA MORTGAGE SOLUTION</h2>
+    </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
